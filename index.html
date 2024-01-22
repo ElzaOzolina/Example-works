@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam page</title>
+    <link rel="stylesheet" type="text/css" href="formatting.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--- Bootstrap CSS file is included in my HTML document. It is a "front-end framework that provides pre-styled components and a responsive grid system to help with the development of responsive and visually appealing websites". If Bootstrap is removed the styling of the page is changed-->
+ 
+</head>
+
+<body>
+    <button onclick="topFunction()" id="backButton" title="Go to top"><strong>&#8593;</strong> Back to
+        top <strong>&#8593;</strong></button>
+    <script src="button.js"></script>
+    <div class="content">
+
+        <nav>
+            <ul class="nav justify-content-center nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#completion-grading" class="nav-link" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        role="tab">Requirements</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#details" class="nav-link" data-bs-toggle="tab" data-bs-target="#details-tab-pane"
+                        role="tab">Assignment details</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#my-deliverable" class="nav-link" data-bs-toggle="tab"
+                        data-bs-target="#deliverable-tab-pane" role="tab">Some demonstrations</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <h1 id="completion-grading">1. Course completion and grading</h1>
+        <p>All the information needed for studies &ndash; homework and test announcements, information about changes in
+            lecture schedule etc. &ndash; is published in the course news forum in the e-Studijas system. The forum is
+            available here: <a href="http://estudijas.lu.lv/mod/forum/view.php?id=56036"
+                target="_blank">http://estudijas.lu.lv/mod/forum/view.php?id=56036</a>. Posts in this forum are
+            automatically sent out to all students registered for the course. Students are responsible for entering a
+            valid address in their LUIS profile so that they can read these email messages.<br>
+            <em><strong>Minimal passing grade is 35% which gets rounded up to 4</strong></em>. All mandatory
+            requirements must be
+            fulfilled to successfully complete the course. The final grade is calculated using the following
+            components.<br>
+        </p>
+
+        <h2>1.1. Homework &ndash; optional, 30% of the final grade</h2>
+        <p>Three homework assignments are given during the semester (use of HTML, CSS and JavaScript,
+            respectively).<span id="dots">...</span><span id="more">
+                <u>Each homework assignment makes 10% of the final grade.</u> Homework dates are announced in advance
+                and
+                approximately 2&nbsp;weeks are given to complete the assignments. If deadline is not met, homework may
+                still
+                be submitted, but maximum grade is decreased by 50%.<br>
+                Homework assignments must be developed by students individually, no co-operation is allowed. Submitted
+                homework solutions are compared with each other to find similar submissions. In case of plagiarism
+                (submissions are identical or very similar), grades are canceled to all the students involved in
+                plagiarism
+                and students must submit a statement of reasons. In case of repeated plagiarism, the statement is
+                escalated
+                to the Dean of the faculty.<br></span></p><button onclick="moreFunction()" id="moreButton">Read
+            more</button>
+        <script src="more.js"></script>
+
+        <h3>1.1.1. Tests &ndash; optional, 20% of the final grade</h3>
+        <p>Two in-class tests take place during the semester, each 45&nbsp;min long and provides 10% of the final grade.
+            Test dates are announced in advance. Any printed and handwritten materials can be used but no electronic
+            devices are allowed.<br>
+            One exam date and specific time will be provided when tests can be taken in case the student could not
+            attend the original test because of some justifiable reason.<br></p>
+
+        <h4>1.1.1.1. Practical assignment &ndash; mandatory, 50% of the final grade</h4>
+        <p>Just to demonstrate some types of headings. This is 4<sup>th</sup> level heading: <code>h4</code>.<br></p>
+        <h5>1.1.1.1.1. Practical assignment &ndash; mandatory, 50% of the final grade</h5>
+        <p>Just to demonstrate some types of headings. This is <code>h5</code>.</p>
+        <h6>1.1.1.1.1. Course questionnaire &ndash; mandatory, 0% of final grade</h6>
+        <p>Just to demonstrate some types of headings. This is <code>h6</code>.<br>
+            The other levels of headings are seen above.</p>
+
+        <h1 id="details">2. Details of the practical assignment</h1>
+        <h2>2.1 Exam procedure</h2>
+        <p>There will be several examination dates during the winter term. No more than 45&nbsp;students can be admitted
+            in each examination day. Students have to apply to a particular examination date in the e-Studijas system
+            prior to the exam.<br>
+            <u>Practical work can be presented on one's own portable computer or on desktop computers available in
+                examination room.</u> Approximately 10&nbsp;minutes are given for the presentation, this includes both
+            demonstration of the functionality developed and source code review.<br>
+        </p>
+        <h2>2.2 Grading</h2>
+        <h3>HTML code &ndash; 15% of the final grade</h3>
+        <ul class="upper-list">
+            <li>The page has to be developed according to HTML&nbsp;5 or XHTML&nbsp;1.0.</li>
+            <li>Strict standard. DOCTYPE has to be declared and the document must conform to it.</li>
+            <li>The document must validate using the W3C validator <a href="http://validator.w3.org"
+                    target="_blank">http://validator.w3.org</a>.</li>
+            <li>ID and class attributes must be used appropriately throughout the document.</li>
+            <li>HTML elements must be used according to their semantics.</li>
+            <li>HTML document must contain all of these element types:
+                <ul class="sub-list">
+                    <li>headings (different levels)</li>
+                    <li>lists (ordered and unordered)</li>
+                    <li>basic text formatting (paragraphs, line breaks, bold, italics)</li>
+                    <li>images</li>
+                    <li>data input form elements</li>
+                </ul>
+            </li>
+            <li>UTF-8 encoding is used.</li>
+        </ul>
+
+        <h1 id="my-deliverable">3. My deliverable for the exam</h1>
+        <p>Here is a list of things I tried to include for my practical assignment &ndash; exam:</p>
+        <div>
+            <ol class="my-list">
+                <li>Some HTML tags: <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;em&gt;</code>,
+                    <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;table&gt;</code>,
+                    <code>&lt;sup&gt;</code>
+                </li>
+                <li>Unordered (<code>&lt;ul&gt;</code>), ordered lists (<code>&lt;ol&gt;</code>)</li>
+                <li>CSS styling, some JavaScript code</li>
+                <li>External and internal links, embedded content</li>
+                <li>Some HTML entities, such as, non-breaking space, en dash (<code>&ndash;</code>), upper arrow
+                    (<code>&#8593;</code>), double quotation mark (<code>&quot;</code>)</li>
+                <li>Images (hex color depictions, background image of site)</li>
+                <li>Form data with input validation, warning messages</li>
+                <li>HTML and CSS validation via the provided W3C link (passed)</li>
+            </ol>
+        </div>
+        <p>I used a hex color palette called &quot;Plankton (Spongebob Squarepants)&quot;, which was retrieved from this
+            site: <a href="https://www.color-hex.com/color-palette/1039651"
+                target="_blank">https://www.color-hex.com/color-palette/1039651</a>.</p>
+
+        <h6>Example Table (using Bootstrap): Preview of colors used for styling buttons and tabs</h6>
+        <div class="table-container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Color</th>
+                        <th scope="col">Hex</th>
+                        <th scope="col">RGB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/green.png" alt="Color Preview"></td>
+                        <td>#026d35</td>
+                        <td>(2,109,53)</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/black.png" alt="Color Preview"></td>
+                        <td>#231f20</td>
+                        <td>(35,31,32)</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/yellow.png" alt="Color Preview"></td>
+                        <td>#f4f3b8</td>
+                        <td>(244,243,184)</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/carrot.png" alt="Color Preview"></td>
+                        <td>#f15a40</td>
+                        <td>(241,90,64)</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bluish.png" alt="Color Preview"></td>
+                        <td>#7cb2b0</td>
+                        <td>(124,178,176)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>3.1. Form</h2>
+        <p>Here is a demonstration of input fields. Try entering inaccurate values to see error messages:</p>
+        <form id="myForm" action="https://www.w3schools.com/action_page.php" onsubmit="return validateForm()">
+            <label class="required" for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your given name" maxlength="50">
+            <div id="fnameError" class="warning"></div>
+
+            <label class="required" for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your surname" maxlength="50">
+            <div id="lnameError" class="warning"></div>
+
+            <label class="required" for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="12345678" maxlength="8">
+            <div id="phoneError" class="warning"></div>
+
+            <label class="required">Mark your preferred color of the given colours above:</label><br>
+            <p>Please note that the black-type color (#231f20) is not provided as an option to choose from.</p>
+            <label class="color-label" for="color1">
+                <input type="checkbox" id="color1" name="color" value="green"> <span id="color1-label">Green
+                    (#026d35)</span>
+            </label>
+            <label class="color-label" for="color2">
+                <input type="checkbox" id="color2" name="color" value="yellow"><span id="color2-label">Yellow(ish)
+                    (#f4f3b8)</span>
+            </label>
+            <label class="color-label" for="color3">
+                <input type="checkbox" id="color3" name="color" value="carrot"><span id="color3-label">Carrot red
+                    (#f15a40)</span>
+            </label>
+            <label class="color-label" for="color4">
+                <input type="checkbox" id="color4" name="color" value="bluish"><span id="color4-label">Bluish
+                    (#7cb2b0)</span>
+            </label>
+            <div id="colorError" class="warning"></div>
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="warningMessage" class="warning"></div>
+        <script src="validation.js"></script>
+
+        <h2 id="animated">3.2. Animated view of visited countries</h2>
+        <p>Here is an animated view of <em>visited</em> countries just to demonstrate <code>iframe</code>:</p>
+        <div>
+            <iframe
+                src="https://visitedplaces.com/embed/?map=world&projection=geoOrthographic&theme=dark-green&water=1&graticule=0&names=1&duration=2000&placeduration=100&slider=0&autoplay=1&autozoom=none&autostep=1&home=LV&places=My%20Home~LV~1_0_0_-24.9_-56.9*Europe~BY_BE_BG_CY_EE_FI_FR_DE_IT_LV.daaa44_LU_LT_MT_NL_NO_PL_HU_PT_RO_RU_SK_ES_SE_CH_GB~2.4_12.1_53.3_-12.1_-53.3*North%20America~CU_US~1.6_-100.6_44.4_100.6_-44.4*South%20America~BR~1.5_-65.9_-20.1_65.9_20.1*Asia~CN_IN_NP~1.5_83.8_33.3_-83.8_-33.3"></iframe>
+        </div>
+
+        <h2>3.3. Sources</h2>
+        <p>The most used online sources for the exam task:</p>
+
+
+        <ol>
+            <li>W3 Schools</li>
+            <li>StackOverflow</li>
+            <li>Bootstrap</li>
+        </ol>
+
+        <footer>Created by <strong>Elza Ozolina</strong>, 1st year student. <br>
+            Student ID No.: <strong>eo14006</strong></footer>
+    </div>
+
+    
+</body>
+
+</html>
